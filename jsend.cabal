@@ -1,0 +1,19 @@
+name:           jsend
+version:        0.1
+license:        BSD3
+license-file:   LICENSE
+category:       Text, Web, JSON
+copyright:      (c) 2013 Pavel Logvinov
+cabal-version:  >= 1.8
+build-type:     Simple
+author:         Pavel Logvinov <lambdas@me.com> 
+maintainer:     Pavel Logvinov <lambdas@me.com>
+synopsis:       JSend parsing/encoding
+library
+  exposed-modules: Data.JSend
+  hs-source-dirs:  src
+  build-depends:   base  >= 4,
+                   aeson >= 0.6.2,
+                   text  >= 0.11,
+                   unordered-containers >= 0.1.3
+  ghc-options:     -Wall
