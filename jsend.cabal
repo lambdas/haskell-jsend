@@ -8,6 +8,8 @@ cabal-version:  >= 1.8
 build-type:     Simple
 author:         Pavel Logvinov <lambdas@me.com> 
 maintainer:     Pavel Logvinov <lambdas@me.com>
+homepage:       https://github.com/lambdas/haskell-jsend
+bug-reports:    https://github.com/lambdas/haskell-jsend/issues
 synopsis:       JSend parsing/encoding
 library
   exposed-modules: Data.JSend
