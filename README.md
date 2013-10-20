@@ -8,10 +8,10 @@ Simple [JSend](http://labs.omniti.com/labs/jsend) implementation in Haskell.
 JSend response is represented by `Response` type that can be serialized/deserialized using [Aeson](https://github.com/bos/aeson):
 
 ```haskell
-data Response a = Success { responseData    :: Maybe a }
-                | Fail    { responseData    :: Maybe a }
-                | Error   { responseData    :: Maybe a
-                          , responseMessage :: Text    }
+data Response s f e = Success { successData  :: s    }
+                    | Fail    { failData     :: f    }
+                    | Error   { errorData    :: e
+                              , errorMessage :: Text }
 ```
 
 You can construct `Response` manually, but there are several helpers:
